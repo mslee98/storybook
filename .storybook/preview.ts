@@ -1,5 +1,6 @@
 import type { Preview } from '@storybook/nextjs-vite'
 import '../src/app/globals.css';
+import { useEffect } from 'react';
 
 const preview: Preview = {
   parameters: {
@@ -17,6 +18,34 @@ const preview: Preview = {
       test: 'todo'
     }
   },
+  globalTypes: {
+    theme: {
+      name: "Theme",
+      description: "Global theme for components",
+      defaultValue: "light",
+      toolbar: {
+        icon: "circlehollow",
+        items: [
+          { value: "light", title: "Light Mode" },
+          { value: "dark", title: "Dark Mode" },
+        ],
+      },
+    },
+  },
+  decorators: [
+    (Story, context) => {
+      useEffect(() => {
+        const html = document.documentElement;
+        if (context.globals.theme === "dark") {
+          html.classList.add("dark");
+        } else {
+          html.classList.remove("dark");
+        }
+      }, [context.globals.theme]);
+
+      return Story();
+    },
+  ],
 };
 
 export default preview;
