@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/nextjs-vite";
 import { TailwindButton } from "./TailwindButton";
 
 const meta = {
-    title: 'Components/TailwindButton',
+    title: 'TAILWINDCSS/Buttons',
     component: TailwindButton,
     parameters: {
       // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
