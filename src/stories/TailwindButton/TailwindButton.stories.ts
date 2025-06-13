@@ -26,12 +26,29 @@ const meta = {
   } satisfies Meta<typeof TailwindButton>;
   
   export default meta;
+  
   type Story = StoryObj<typeof meta>;
 
   export const Primary: Story = {
     args: {
       children: 'Primary Button',
       variant: 'primary',
+      size: 'md',
+    },
+  };
+
+  export const Secondary: Story = {
+    args: {
+      children: 'Secondary Button',
+      variant: 'secondary',
+      size: 'md',
+    },
+  };
+
+  export const Outline: Story = {
+    args: {
+      children: 'Outline Button',
+      variant: 'outline',
       size: 'md',
     },
   };
