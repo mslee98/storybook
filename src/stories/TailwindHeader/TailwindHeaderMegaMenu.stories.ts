@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/nextjs-vite";
 import { TailwindHeaderMegaMenu } from "./TailwindHeaderMegaMenu";
 
 const meta = {
-    title: 'TAILWINDCSS/Header/MegaMenu',
+    title: 'TAILWINDCSS/Header',
     component: TailwindHeaderMegaMenu,
     parameters: {
         layout: 'fullscreen',
@@ -13,7 +13,7 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const Default: Story = {
+export const Megamenu: Story = {
     args: {
         menuItems: [
             { 
