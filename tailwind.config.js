@@ -7,6 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        moneygraphy: ['MoneygraphyRounded', 'sans-serif'],
+        'moneygraphy-pixel':['MoneygraphyPixel', 'sans-serif'],
+      },
       colors: {
         primary: {
           50: '#f0f9ff',
