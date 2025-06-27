@@ -1,17 +1,17 @@
 import React from 'react';
 import Image from "next/image";
 
-import watchScreenImage from '../assets/Tailwind/watch-screen-image.png';
-import watchScreenImageDark from '../assets/Tailwind/watch-screen-image-dark.png';
+import watchScreenImage from '../../assets/Tailwind/watch-screen-image.png';
+import watchScreenImageDark from '../../assets/Tailwind/watch-screen-image-dark.png';
 
-import mobileScreenImage from '../assets/Tailwind/mockup-1-light.png';
-import mobileScreenImageDark from '../assets/Tailwind/mockup-1-dark.png';
+import mobileScreenImage from '../../assets/Tailwind/mockup-1-light.png';
+import mobileScreenImageDark from '../../assets/Tailwind/mockup-1-dark.png';
 
-import tabletScreenImage from '../assets/Tailwind/tablet-mockup-image.png';
-import tabletScreenImageDark from '../assets/Tailwind/tablet-mockup-image-dark.png';
+import tabletScreenImage from '../../assets/Tailwind/tablet-mockup-image.png';
+import tabletScreenImageDark from '../../assets/Tailwind/tablet-mockup-image-dark.png';
 
-import desktopScreenImage from '../assets/Tailwind/laptop-screen.png';
-import desktopScreenImageDark from '../assets/Tailwind/laptop-screen-dark.png';
+import desktopScreenImage from '../../assets/Tailwind/laptop-screen.png';
+import desktopScreenImageDark from '../../assets/Tailwind/laptop-screen-dark.png';
 
 interface DeviceMockupProps {
     // variant?: 'primary' | 'secondary' | 'outline';
